@@ -1,6 +1,6 @@
 package com.easemob.im_flutter_sdk;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.hyphenate.EMCallBack;
 import com.hyphenate.EMChatRoomChangeListener;
