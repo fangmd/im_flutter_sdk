@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
-import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
 import com.hyphenate.EMCallBack;
@@ -23,6 +22,8 @@ import com.hyphenate.chat.EMMessage.Status;
 import com.hyphenate.chat.EMTextMessageBody;
 import com.hyphenate.exceptions.EMServiceNotReadyException;
 import com.hyphenate.util.EMLog;
+
+import androidx.fragment.app.FragmentActivity;
 
 @SuppressLint("Registered")
 public class CallActivity extends FragmentActivity {

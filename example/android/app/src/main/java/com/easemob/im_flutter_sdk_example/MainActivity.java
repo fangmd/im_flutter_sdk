@@ -11,6 +11,7 @@ import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugins.GeneratedPluginRegistrant;
 
 public class MainActivity extends FlutterActivity {
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -18,6 +19,7 @@ public class MainActivity extends FlutterActivity {
     registerCustomPlugin(this);
     requestPermissions();
   }
+  
 
   private void registerCustomPlugin(PluginRegistry registrar) {
     ImDemoFlugin.registerWith(registrar.registrarFor(ImDemoFlugin.CHANNEL));
