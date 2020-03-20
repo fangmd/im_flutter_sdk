@@ -1,31 +1,29 @@
 package com.easemob.im_flutter_sdk;
 
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.util.function.Consumer;
-
 import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
+
+import com.hyphenate.EMConnectionListener;
+import com.hyphenate.EMMultiDeviceListener;
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.chat.EMDeviceInfo;
+import com.hyphenate.chat.EMOptions;
+import com.hyphenate.exceptions.HyphenateException;
+import com.hyphenate.util.EMLog;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-
-import com.hyphenate.EMCallBack;
-import com.hyphenate.EMConnectionListener;
-import com.hyphenate.EMMultiDeviceListener;
-import com.hyphenate.chat.EMClient;
-import com.hyphenate.chat.EMOptions;
-import com.hyphenate.chat.EMDeviceInfo;
-import com.hyphenate.exceptions.HyphenateException;
-import com.hyphenate.push.EMPushHelper;
-import com.hyphenate.push.EMPushType;
-import com.hyphenate.util.EMLog;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 @SuppressWarnings("unchecked")

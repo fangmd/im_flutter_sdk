@@ -1,5 +1,8 @@
 package com.easemob.im_flutter_sdk;
 
+import android.os.Handler;
+import android.os.Looper;
+
 import com.hyphenate.exceptions.HyphenateException;
 
 import java.util.HashMap;
